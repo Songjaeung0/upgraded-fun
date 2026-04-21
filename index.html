@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>성재웅 | Web UI/UX · Brand Designer</title>
+    <meta
+      name="description"
+      content="캡처 기반 공개. Web UI/UX, 브랜드 톤앤매너, 전환형 페이지, 프론트 구현 경험을 중심으로 정리한 포트폴리오."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/main.js"></script>
+    <link rel="icon" href="data:," />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">본문 바로가기</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="./" aria-label="홈으로">
+          <span class="brand__mark" aria-hidden="true">SJ</span>
+        </a>
+
+        <nav class="nav" aria-label="주요 메뉴">
+          <a class="nav__link" href="#work">Projects</a>
+          <a class="nav__link" href="#posters">Posters</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero--white" aria-label="소개">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="cube-wrap">
+            <div class="cube3d">
+              <div class="cube3d__face cube3d__face--front"></div>
+              <div class="cube3d__face cube3d__face--back"></div>
+              <div class="cube3d__face cube3d__face--right"></div>
+              <div class="cube3d__face cube3d__face--left"></div>
+              <div class="cube3d__face cube3d__face--top"></div>
+              <div class="cube3d__face cube3d__face--bottom"></div>
+            </div>
+            <div class="cube-fallback" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="container hero__inner">
+          <div class="hero__titleblock">
+            <h1 class="wordmark" aria-label="Seong Jaeung">
+              <span class="wordmark__top">SEONG</span>
+              <span class="wordmark__mid">JAEUNG</span>
+            </h1>
+
+            <p class="hero__kicker">WEB UI/UX · BRAND · FRONT IMPLEMENTATION</p>
+
+            <p class="hero__desc">
+              디자인 의도를 지키는 UI를 설계하고, 반응형까지 안정적으로 구현합니다 <br>
+              사용자 흐름(탐색-전환)을 코드로 끝까지 완성합니다
+            </p>
+
+            <ul class="chips" role="list" aria-label="사용 툴">
+              <li class="chip">Figma</li>
+              <li class="chip">Photoshop</li>
+              <li class="chip">Illustrator</li>
+              <li class="chip">HTML/CSS/JS</li>
+              <li class="chip">협업 기반 Front</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="work" class="section section--white">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Projects</h2>
+      <p class="section__desc">
+        지원 직무(웹 UI/UX/브랜드/전환형 페이지)와 유사도가 높은 4개 케이스를 대표로 구성했습니다.
+      </p>
+    </div>
+
+    <div class="filters" role="group" aria-label="프로젝트 필터">
+      <button class="filter is-active" type="button" data-filter="all">All</button>
+      <button class="filter" type="button" data-filter="uiux">UI/UX</button>
+      <button class="filter" type="button" data-filter="conversion">Conversion</button>
+      <button class="filter" type="button" data-filter="brand">Brand</button>
+      <button class="filter" type="button" data-filter="front">Front</button>
+    </div>
+
+    <div class="grid" data-grid>
+      <article class="work" data-tags="uiux front">
+        <a class="work__link" href="work/exhibition.html">
+          <div class="work__media" aria-hidden="true">
+            <img
+              src="assets/img/editorial/exhibition.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="work__thumb" aria-hidden="true">
+            <p class="work__kicker">Case Study</p>
+            <h3 class="work__headline">Design Exhibition Showcase UI</h3>
+            <p class="work__sub">목록-상세 탐색 구조 · 운영 템플릿 · 프론트 구현</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="work" data-tags="conversion uiux front">
+        <a class="work__link" href="work/petition.html">
+          <div class="work__media" aria-hidden="true">
+            <img
+              src="assets/img/editorial/petition.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="work__thumb" aria-hidden="true">
+            <p class="work__kicker">Case Study</p>
+            <h3 class="work__headline">Petition Landing (CTA & Form UX)</h3>
+            <p class="work__sub">설득 흐름 · 동의/폼 가독성 · 전환형 구조</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="work" data-tags="brand front">
+        <a class="work__link" href="work/memorial.html">
+          <div class="work__media" aria-hidden="true">
+            <img
+              src="assets/img/editorial/memorial.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="work__thumb" aria-hidden="true">
+            <p class="work__kicker">Case Study</p>
+            <h3 class="work__headline">Memorial Page (Tone & Layout)</h3>
+            <p class="work__sub">톤앤매너 · 타이포/여백 시스템 · 감성 페이지 구현</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="work" data-tags="uiux front brand">
+        <a class="work__link" href="work/award.html">
+          <div class="work__media" aria-hidden="true">
+            <img
+              src="assets/img/editorial/award.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <div class="work__thumb" aria-hidden="true">
+            <p class="work__kicker">Additional</p>
+            <h3 class="work__headline">Award Info / Recommendation Flow</h3>
+            <p class="work__sub">긴 안내/절차/추천 폼을 정보 단위로 정리</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+      <section id="posters" class="section section--gray">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Posters & Editorial</h2>
+            <p class="section__desc">
+              참고 이미지처럼 “좌측 설명 + 우측 이미지” 구조로 정리했습니다. (여기에는 6-10개만 선별 추천)
+            </p>
+          </div>
+
+
+            <div class="split__main" data-lightbox>
+              <div class="masonry">
+                <figure class="mitem">
+                  <img
+                    src="assets/img/posters/poster-01.jpg"
+                    alt="포스터 작업 1"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>Poster · 세미나/행사 홍보</figcaption>
+                </figure>
+
+                <figure class="mitem">
+                  <img
+                    src="assets/img/posters/poster-02.jpg"
+                    alt="포스터 작업 2"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>Poster · 공모전/특강</figcaption>
+                </figure>
+
+                <figure class="mitem">
+                  <img
+                    src="assets/img/posters/gangbuk-01.jpg"
+                    alt="강북구 소식지 1페이지"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>Editorial · 강북구 소식지 1페이지</figcaption>
+                </figure>
+
+                <figure class="mitem">
+                  <img
+                    src="assets/img/posters/poster-04.jpg"
+                    alt="포스터 작업 2"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>Poster · 전문가/특강</figcaption>
+                </figure>
+
+                <figure class="mitem">
+                  <img
+                    src="assets/img/posters/poster-05.jpg"
+                    alt="포스터 작업 2"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>Poster · 힐링캠프/행사 홍보</figcaption>
+                </figure>
+
+                <figure class="mitem">
+                  <img
+                    src="assets/img/posters/poster-06.jpg"
+                    alt="포스터 작업 2"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>Poster · 콩쿠르/행사 홍보</figcaption>
+                </figure>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span data-year></span> Seong Jae-ung</p>
+      </div>
+    </footer>
+
+<div class="lightbox" data-lightbox-modal aria-hidden="true">
+  <div class="lightbox__backdrop" data-lightbox-close></div>
+
+  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="이미지 확대">
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="닫기">×</button>
+
+    <div class="lightbox__content">
+      <img class="lightbox__img" alt="" />
+      <p class="lightbox__cap"></p>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
