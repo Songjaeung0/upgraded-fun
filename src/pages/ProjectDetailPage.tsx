@@ -23,7 +23,7 @@ function ProjectDetailPage() {
       </Link>
 
       <header className="detail__header">
-        <div>
+        <div className="detail__intro">
           <p className="detail__type">{project.type}</p>
           <h1>{project.title}</h1>
           <p className="detail__summary">{project.summary}</p>
@@ -56,7 +56,6 @@ function ProjectDetailPage() {
       <div className="detail__content-grid">
         {detailSections.map((section) => (
           <section key={section.key} className="detail__content-card">
-            <span>{section.title}</span>
             <h2>{section.title}</h2>
             <p>{project[section.key]}</p>
           </section>
