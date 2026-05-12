@@ -1,15 +1,34 @@
 import ProjectGrid from '../components/ProjectGrid';
 import { projects } from '../data/projects';
 
+const capabilityItems = [
+  'HTML / CSS',
+  'JavaScript',
+  'Photoshop',
+  'Illustrator',
+  'Responsive Web',
+  'Operation Pages'
+];
+
 function HomePage() {
   return (
     <>
       <section className="hero section">
-        <p className="hero__label">Web Publisher · Visual Design · Frontend Support</p>
-        <h1>디자인을 이해하고 구현까지 연결하는 웹 퍼블리셔</h1>
-        <p>
-          Photoshop과 Illustrator 기반의 시각물 제작부터 HTML, CSS, JavaScript를 활용한 웹 콘텐츠 구현까지 연결해 작업합니다.
-        </p>
+        <div className="hero__content">
+          <p className="hero__label">Web Publisher · Visual Design · Frontend Support</p>
+          <h1>디자인을 이해하고 구현까지 연결하는 웹 퍼블리셔</h1>
+          <p>
+            Photoshop과 Illustrator 기반의 시각물 제작부터 HTML, CSS, JavaScript를 활용한 웹 콘텐츠 구현까지 연결해 작업합니다.
+          </p>
+        </div>
+        <aside className="hero__panel" aria-label="Core capabilities">
+          <p>Core Capabilities</p>
+          <ul>
+            {capabilityItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </aside>
       </section>
 
       <section className="about section" aria-labelledby="about-title">
@@ -26,6 +45,20 @@ function HomePage() {
             디자인 의도를 이해하고 HTML, CSS, JavaScript 기반 화면으로 옮기는 데 집중합니다.
             반복 운영되는 학교와 기관 콘텐츠의 특성을 고려해 가독성, 유지보수성, 정보 우선순위를 함께 봅니다.
           </p>
+          <ul className="about__stats">
+            <li>
+              <strong>Web</strong>
+              <span>홍보 · 안내 · 운영 페이지</span>
+            </li>
+            <li>
+              <strong>Design</strong>
+              <span>포스터 · 배너 · 시각물</span>
+            </li>
+            <li>
+              <strong>Build</strong>
+              <span>HTML · CSS · JavaScript</span>
+            </li>
+          </ul>
           <ul className="about__skills">
             <li>HTML</li>
             <li>CSS</li>
@@ -37,6 +70,11 @@ function HomePage() {
         </div>
       </section>
 
+      <section className="works-intro section">
+        <p className="works-intro__eyebrow">Selected Works</p>
+        <h2>실제 운영과 홍보 목적에 맞춰 제작한 작업물입니다.</h2>
+        <p>웹페이지, 전시 콘텐츠, 포스터 작업을 중심으로 목적에 맞는 정보 구조와 시각적 전달력을 보여줍니다.</p>
+      </section>
       <ProjectGrid projects={projects} title="Selected Works" />
     </>
   );
