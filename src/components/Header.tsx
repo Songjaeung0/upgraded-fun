@@ -12,7 +12,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <strong className="header__logo">My Portfolio</strong>
+        <strong className="header__logo">Sung Jaeung Portfolio</strong>
         <nav>
           <ul className="header__menu">
             {menuItems.map((item) => (
