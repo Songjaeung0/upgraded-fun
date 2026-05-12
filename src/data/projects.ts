@@ -14,7 +14,8 @@ export type Project = {
   result: string;
 };
 
-const assetPath = (fileName: string) => `${import.meta.env.BASE_URL}assets/img/${fileName}`;
+const assetPath = (folder: 'editorial' | 'posters', fileName: string) =>
+  `${import.meta.env.BASE_URL}assets/img/${folder}/${fileName}`;
 
 export const projects: Project[] = [
   {
@@ -25,7 +26,7 @@ export const projects: Project[] = [
     role: '웹 퍼블리싱 / 운영 페이지 제작',
     tools: ['HTML', 'CSS', 'Photoshop'],
     type: 'Landing Page',
-    thumbnail: assetPath('petition.JPG'),
+    thumbnail: assetPath('editorial', 'petition.JPG'),
     featuredFor: ['publishing', 'frontend'],
     overview: '서명운동 참여 목적과 참여 현황, 개인정보 동의 및 입력 흐름을 한 페이지 안에서 확인할 수 있도록 구성했습니다.',
     problem: '참여자가 서명 목적을 이해하고 입력까지 자연스럽게 이어지도록 정보 구조와 CTA가 명확해야 했습니다.',
@@ -40,7 +41,7 @@ export const projects: Project[] = [
     role: '웹 디자인 / 퍼블리싱',
     tools: ['HTML', 'CSS', 'Photoshop'],
     type: 'Information Page',
-    thumbnail: assetPath('award.jpg'),
+    thumbnail: assetPath('editorial', 'award.JPG'),
     featuredFor: ['publishing', 'design'],
     overview: '봉사상 소개, 추천 조건, 접수 절차, 신청 입력 영역을 차례대로 배치한 정보 안내형 페이지입니다.',
     problem: '수상 안내와 추천 신청이 함께 포함되어 있어 정보량이 많고 사용자가 필요한 내용을 빠르게 찾아야 했습니다.',
@@ -55,7 +56,7 @@ export const projects: Project[] = [
     role: 'UI 구성 / 웹 콘텐츠 구현',
     tools: ['HTML', 'CSS', 'JavaScript'],
     type: 'Exhibition Page',
-    thumbnail: assetPath('exhibition.png'),
+    thumbnail: assetPath('editorial', 'exhibition.png'),
     featuredFor: ['frontend', 'design'],
     overview: '작가 목록과 작품 정보를 분리해 보여주는 전시 소개형 페이지입니다.',
     problem: '많은 참여자명과 작품 상세 정보를 동시에 보여줘야 하므로 화면의 정보 밀도 조절이 중요했습니다.',
@@ -70,7 +71,7 @@ export const projects: Project[] = [
     role: '웹 디자인 / 콘텐츠 구성',
     tools: ['Photoshop', 'HTML', 'CSS'],
     type: 'Memorial Page',
-    thumbnail: assetPath('memorial.JPG'),
+    thumbnail: assetPath('editorial', 'memorial.JPG'),
     featuredFor: ['design', 'publishing'],
     overview: '인물 이미지, 추모 분위기, 음악 콘텐츠를 결합해 고인의 활동을 소개하는 페이지입니다.',
     problem: '추모 페이지 특성상 정보 전달뿐 아니라 분위기와 톤을 섬세하게 맞추는 것이 중요했습니다.',
@@ -85,7 +86,7 @@ export const projects: Project[] = [
     role: '포스터 디자인',
     tools: ['Photoshop', 'Illustrator'],
     type: 'Poster',
-    thumbnail: assetPath('poster-05.jpg'),
+    thumbnail: assetPath('posters', 'poster-05.jpg'),
     featuredFor: ['design'],
     overview: '장소, 일정, 모집 기간, 프로그램 구성을 한눈에 확인할 수 있도록 제작한 홍보 포스터입니다.',
     problem: '캠프형 프로그램 특성상 행사 분위기와 실질 정보를 동시에 전달해야 했습니다.',
@@ -100,7 +101,7 @@ export const projects: Project[] = [
     role: '포스터 디자인',
     tools: ['Photoshop', 'Illustrator'],
     type: 'Poster',
-    thumbnail: assetPath('poster-06.jpg'),
+    thumbnail: assetPath('posters', 'poster-06.jpg'),
     featuredFor: ['design'],
     overview: '콩쿠르 일정, 참가 부문, 시상 내역, 신청 방법을 세로형 포스터 안에 정리했습니다.',
     problem: '시상 정보와 참가 안내가 많아 시각적 위계를 명확히 잡아야 했습니다.',
@@ -115,7 +116,7 @@ export const projects: Project[] = [
     role: '포스터 디자인 / 정보 구조 정리',
     tools: ['Photoshop', 'Illustrator'],
     type: 'Poster',
-    thumbnail: assetPath('gangbuk-01.jpg'),
+    thumbnail: assetPath('posters', 'gangbuk-01.jpg'),
     featuredFor: ['design', 'publishing'],
     overview: '모집 부문, 일정, 신청 방법, 참여 혜택, 유의사항을 한 장에 정리한 공모전 포스터입니다.',
     problem: '공모전 안내는 세부 정보가 많아 시각적으로 복잡해지기 쉬웠습니다.',
@@ -130,7 +131,7 @@ export const projects: Project[] = [
     role: '포스터 디자인 / 정보 편집',
     tools: ['Photoshop', 'Illustrator'],
     type: 'Poster',
-    thumbnail: assetPath('poster-01.jpg'),
+    thumbnail: assetPath('posters', 'poster-01.jpg'),
     featuredFor: ['design'],
     overview: '행사 개요, 초청 연사, 프로그램 시간표를 포함한 학술 세미나 포스터입니다.',
     problem: '연사 정보와 시간표가 길어 단순 나열만으로는 가독성이 떨어질 수 있었습니다.',
@@ -145,7 +146,7 @@ export const projects: Project[] = [
     role: '포스터 디자인',
     tools: ['Photoshop', 'Illustrator'],
     type: 'Poster',
-    thumbnail: assetPath('poster-02.jpg'),
+    thumbnail: assetPath('posters', 'poster-02.jpg'),
     featuredFor: ['design', 'publishing'],
     overview: '공모 요건, 응모 기간, 시상 및 발표 정보를 구조화한 공모전 포스터입니다.',
     problem: '공모전 정보가 길고 조건이 많아 사용자가 참여 가능 여부를 빠르게 판단하기 어려울 수 있었습니다.',
@@ -160,7 +161,7 @@ export const projects: Project[] = [
     role: '포스터 디자인 / 정보 편집',
     tools: ['Photoshop', 'Illustrator'],
     type: 'Poster',
-    thumbnail: assetPath('poster-04.jpg'),
+    thumbnail: assetPath('posters', 'poster-04.jpg'),
     featuredFor: ['design'],
     overview: '특강 목적, 참여 모드, 실습 도구, 시간표, QR 정보를 한 장에 구성한 안내 포스터입니다.',
     problem: '강의 정보와 실습 준비 사항이 많아 사용자가 중요한 준비 항목을 놓치기 쉬웠습니다.',
