@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import MainLayout from './layouts/MainLayout';
 import DesignPage from './pages/DesignPage';
 import FrontendPage from './pages/FrontendPage';
@@ -9,6 +10,7 @@ import PublishingPage from './pages/PublishingPage';
 function App() {
   return (
     <MainLayout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/design" element={<DesignPage />} />
