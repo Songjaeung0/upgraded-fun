@@ -5,11 +5,10 @@ function HomePage() {
   return (
     <>
       <section className="hero section">
-        <p className="hero__label">Web Designer · Publisher · Frontend Assistant</p>
-        <h1>기획 의도를 화면으로 정확히 구현하는 포트폴리오</h1>
+        <p className="hero__label">Web Publisher · Visual Design · Frontend Support</p>
+        <h1>디자인을 이해하고 구현까지 연결하는 웹 퍼블리셔</h1>
         <p>
-          디자인 감각과 퍼블리싱 완성도, 그리고 프론트엔드 협업 경험을 기반으로 실무형 결과물을
-          만듭니다.
+          Photoshop과 Illustrator 기반의 시각물 제작부터 HTML, CSS, JavaScript를 활용한 웹 콘텐츠 구현까지 연결해 작업합니다.
         </p>
       </section>
       <ProjectGrid projects={projects} title="Selected Works" />
