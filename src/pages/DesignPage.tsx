@@ -2,13 +2,9 @@ import ProjectGrid from '../components/ProjectGrid';
 import { projects } from '../data/projects';
 
 function DesignPage() {
-  const sorted = [...projects].sort((a, b) => {
-    const aFeatured = a.featuredFor.includes('design') ? 1 : 0;
-    const bFeatured = b.featuredFor.includes('design') ? 1 : 0;
-    return bFeatured - aFeatured;
-  });
+  const filtered = projects.filter((project) => project.featuredFor.includes('design'));
 
-  return <ProjectGrid projects={sorted} title="Design Projects" />;
+  return <ProjectGrid projects={filtered} title="Design Projects" />;
 }
 
 export default DesignPage;
