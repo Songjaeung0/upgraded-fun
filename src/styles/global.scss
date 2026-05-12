@@ -33,12 +33,17 @@ a {
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
+  z-index: 10;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 72px;
+  }
+
+  &__logo {
+    letter-spacing: -0.02em;
   }
 
   &__menu {
@@ -64,6 +69,20 @@ a {
 
   &__label {
     color: var(--point);
+    font-weight: 600;
+  }
+
+  h1 {
+    max-width: 760px;
+    margin: 1.2rem 0 1rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+  }
+
+  p:not(.hero__label) {
+    max-width: 760px;
+    color: #4f5663;
   }
 }
 
@@ -88,7 +107,9 @@ a {
   &__thumb {
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit: contain;
+    background: #f3f4f7;
+    border-bottom: 1px solid var(--line);
   }
 
   &__body {
@@ -127,7 +148,7 @@ a {
 }
 
 .detail {
-  max-width: 760px;
+  max-width: 920px;
 
   section {
     padding: 1.2rem 0;
@@ -135,7 +156,54 @@ a {
   }
 
   &__back {
+    display: inline-block;
+    margin-bottom: 1.2rem;
     color: var(--point);
+  }
+
+  &__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: #f3f4f7;
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 78vh;
+      object-fit: contain;
+      border-radius: 10px;
+      background: #fff;
+    }
+  }
+
+  &__type {
+    color: var(--point);
+    font-weight: 600;
+  }
+
+  &__summary {
+    color: #4f5663;
+  }
+
+  &__tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: #f3f4f7;
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -162,7 +230,16 @@ a {
     padding: 0.8rem 0;
   }
 
+  .header__menu {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .detail__hero {
+    padding: 0.75rem;
   }
 }
