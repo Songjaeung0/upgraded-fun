@@ -11,7 +11,7 @@ function MainLayout({ children }: Props) {
       <Header />
       <main className="container">{children}</main>
       <footer id="contact" className="footer container">
-        <p>Contact · your.email@example.com · GitHub / Behance</p>
+        <p>Contact · seongjaeung841@gmail.com · GitHub: Songjaeung0</p>
       </footer>
     </>
   );
