@@ -75,7 +75,7 @@ function HomePage() {
         <h2>실제 운영과 홍보 목적에 맞춰 제작한 작업물입니다.</h2>
         <p>웹페이지, 전시 콘텐츠, 포스터 작업을 중심으로 목적에 맞는 정보 구조와 시각적 전달력을 보여줍니다.</p>
       </section>
-      <ProjectGrid projects={projects} title="Selected Works" />
+      <ProjectGrid projects={projects} />
     </>
   );
 }
