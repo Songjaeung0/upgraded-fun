@@ -14,8 +14,12 @@ function ProjectDetailPage() {
       <Link to="/" className="detail__back">
         ← Back
       </Link>
+      <div className="detail__hero">
+        <img src={project.thumbnail} alt={project.title} />
+      </div>
+      <p className="detail__type">{project.type}</p>
       <h1>{project.title}</h1>
-      <p>{project.summary}</p>
+      <p className="detail__summary">{project.summary}</p>
 
       <section>
         <h2>Overview</h2>
@@ -24,6 +28,14 @@ function ProjectDetailPage() {
       <section>
         <h2>My Role</h2>
         <p>{project.role}</p>
+      </section>
+      <section>
+        <h2>Tools</h2>
+        <ul className="detail__tools">
+          {project.tools.map((tool) => (
+            <li key={tool}>{tool}</li>
+          ))}
+        </ul>
       </section>
       <section>
         <h2>Problem</h2>
