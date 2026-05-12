@@ -16,6 +16,8 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -73,11 +75,13 @@ a {
   }
 
   h1 {
-    max-width: 760px;
+    max-width: 860px;
     margin: 1.2rem 0 1rem;
     font-size: clamp(2rem, 5vw, 4rem);
     line-height: 1.2;
     letter-spacing: -0.05em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   p:not(.hero__label) {
@@ -114,6 +118,13 @@ a {
 
   &__body {
     padding: 1.1rem;
+  }
+
+  h3,
+  p,
+  dd {
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   &__meta dt {
