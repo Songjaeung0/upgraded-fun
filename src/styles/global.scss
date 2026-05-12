@@ -352,9 +352,10 @@ a {
 
   h1 {
     margin: 0 0 1rem;
-    font-size: clamp(2rem, 5vw, 4rem);
+    max-width: 680px;
+    font-size: clamp(2rem, 3.8vw, 3.25rem);
     line-height: 1.18;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.045em;
   }
 
   &__summary {
