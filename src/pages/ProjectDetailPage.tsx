@@ -37,6 +37,10 @@ function ProjectDetailPage() {
             <dt>Role</dt>
             <dd>{project.role}</dd>
           </div>
+          <div>
+            <dt>Contribution</dt>
+            <dd>{project.contribution}</dd>
+          </div>
         </dl>
       </header>
 
