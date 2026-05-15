@@ -17,6 +17,10 @@ function ProjectCard({ project }: Props) {
             <dt>Role</dt>
             <dd>{project.role}</dd>
           </div>
+          <div>
+            <dt>Contribution</dt>
+            <dd>{project.contribution}</dd>
+          </div>
         </dl>
         <ul className="project-card__tags">
           {project.tools.map((tool) => (
