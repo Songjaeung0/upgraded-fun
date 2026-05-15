@@ -379,7 +379,7 @@ a {
     display: grid;
     grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
     gap: 2rem;
-    align-items: end;
+    align-items: center;
     margin-bottom: 1.5rem;
     padding: 2rem;
     border: 1px solid var(--line);
